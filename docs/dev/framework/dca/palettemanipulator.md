@@ -150,6 +150,9 @@ use Contao\CoreBundle\DataContainer\PaletteManipulator;
 PaletteManipulator::create()
     // adding the field as usual
     ->addField('custom_field', 'singleSRC')
+    
+    // remove the field "floating" from the subpalette
+    ->removeField('floating')
 
     // applying the new configuration to the "addImage" subpalette
     ->applyToSubpalette('addImage', 'tl_content')

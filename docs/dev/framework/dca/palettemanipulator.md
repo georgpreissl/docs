@@ -120,6 +120,11 @@ PaletteManipulator::create()
 
 If you do not provide a parent (and position), the legend will simply be appended at the end.
 
+Add a label to the newly created legend:
+```php
+// contao/languages/en/default.php
+$GLOBALS['TL_LANG']['tl_news']['custom_legend'] = 'My custom Legend';
+```
 
 ## Removing fields
 {{< version "4.7" >}}
